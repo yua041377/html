@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/mycss.css">
+<style>
+	form{
+		width : 40%;
+		height : auto;
+		padding : 40px;
+		margin : 40px auto;
+	}
+	lable{
+	width : 60px;
+	heigth : 70px;
+	display : inline-block;
+	margin-bottom : 10px;
+	
+	}
+	
+	h2{
+		text-align : center;
+		font-weight : blod;
+	}
+	div{
+		margin : 20px auto;
+		padding : 20px;
+	}
+</style>
+</head>
+<body>
+	
+	<div>
+	<h2> 회원 가입 화면 </h2>
+	<form name="aa" action="join.jsp" method="post">
+	<lable>이름</lable><input type="text" name="name" value="김아현"><br>
+	<lable>주소</lable><input type="text" name="addr" value="유성구"><br>
+	<lable>이메일</lable><input type="text" name="email" value="yua04137"><br>
+	<input type="radio" name="gender" value="남자"> Male<br>
+	<input type="radio" name="gender" value="여자"> Female<br><br>
+	
+	<input type="submit" value="send">
+	<input type="reset" value="원래대로">
+	</form>
+	</div>
+
+	
+</body>
+</html>

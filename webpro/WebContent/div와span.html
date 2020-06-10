@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang ="ko">
+<head>
+<meta charset="UTF-8">
+	<title>
+		안녕
+	</title>
+	<link rel="stylesheet" href="./css/mycss.css" type="text/css">
+	<style>
+	
+		span{
+			background : pink;
+			
+		}
+		div{
+			border : 2px dotted red;
+			margin : 10px;
+			padding : 10px;
+			height : 350px;
+		
+		}
+		img{
+			width : 100%;
+			height : 90%;
+		}
+		
+		div.in{
+			border : 2px dotted orange;
+			box-sizing : border-box;
+			width : 40%;
+			height : 200px;
+			float : left;
+			
+		
+		}
+		div#in1{
+			width : calc(30% - 2%);
+			box-sizing : border-box;
+			
+		}
+		div#in2{
+			width : calc(60% - 10px);
+			overflow : auto;
+		}
+		
+		h2{
+			border : 2px solid blue;
+			text-align : center;
+		
+		
+		}
+		
+	</style>
+</head>
+<body>
+	<pre>
+
+외부 스타일 파일을 적용하는 방법
+&lt;link rel="stylesheet" href="./css/mycss.css" type="text/css"&gt;
+	
+	
+&lt;div&gt; : 블록요소 자동으로 줄이 바뀌고, 크기(width,height)를 지정가능
+
+그외 블럭요소의 예 : pre, p, h1,...h6
+	
+&lt;span&gt; : 인라인 요소, 자동으로 줄이 바뀌지 않고, 크기를 지정못하지만 img만 가능
+그외 인라인 요소의 예 : em, sup, sub, b, i, strong, img
+
+스타일을 위하여 id 또는 class속성을 지정
+id속성 : 유일한 값으로 지정. style에서 #으로 접근
+class속성 : 같은 이름이 여러개 올 수 있다. style에서 .으로 접근
+
+블록요소의 태그를 옆으로 배치하기 위해 style : float:left,
+
+브라우저의 크기에 따라 각 html 요소들도 크기가 상대적으로 변해야 한다.
+box-sizing : border-box; 테두리를 기준으로 크기 조절
+box-sizing : content-box; 내용을 기준으로 크기 조절
+
+div요소 밖으로 넘치는 내용처리. style에서 overflow지정
+overflow : auto;
+overflow : hidden;
+overflow : scroll;
+
+
+	</pre>
+	
+	<div class = "out">
+		<h2>사&nbsp;&nbsp;&nbsp;&nbsp;자</h2>
+		<div class = "in" id="in1">
+			<img src="./images/사자.jpg">
+		</div>
+		<div class = "in" id="in2">
+		사자(獅子, lion)는 식육목 고양이과 표범속으로 분류되는 포유동물이다. 
+		현존하는 고양잇과 동물 중에서 호랑이에 이어 두 번째로 큰 종이다. 
+		사자는 흔히 백수(百獸)의 왕으로 불리며, 고양잇과 동물 가운데 사자만이 무리를 지어 산다.
+		사자무리를 <span>‘프라이드’</span>라고 하는데[1] 한 마리의 수컷이 여러 암컷들을 거느리고
+		다니는 습성으로 인하여 수사자는 동서고금 가리지 않고 왕권의 상징으로 사용되어 왔다. 
+		</div>
+	</div>
+	
+	<div class = "out">
+		<h2>사&nbsp;&nbsp;&nbsp;&nbsp;자</h2>
+		<div class = "in" id="in1">
+			<img src="./images/사자.jpg">
+		</div>
+		<div class = "in" id="in2">
+		사자(獅子, lion)는 식육목 고양이과 표범속으로 분류되는 포유동물이다. 현존하는 고양잇과 동물 중에서 호랑이에 이어 두 번째로 큰 종이다. 사자는 흔히 백수(百獸)의 왕으로 불리며, 고양잇과 동물 가운데 사자만이 무리를 지어 산다. 사자무리를 ‘프라이드’라고 하는데[1] 한 마리의 수컷이 여러 암컷들을 거느리고 다니는 습성으로 인하여 수사자는 동서고금 가리지 않고 왕권의 상징으로 사용되어 왔다. 
+		</div>
+	</div>
+</body>
+</html>

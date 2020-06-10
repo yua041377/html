@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	img{
+		width : 100px;
+		height : 100px;
+	}
+	#inputimg{
+		width : 50px;
+		height : 50px;
+	
+	}
+</style>
+<script>
+	function aa(){
+		
+		window.alert("Hello!!!");
+		
+		var userName = document.ff.name.value
+		let userid = document.ff.id.value;
+		
+		document.write("이름 : " + userName + "<br>");
+		document.write("아이디 : " + userid + "<br>");
+	}
+</script>
+<body>
+	<form action="ahhyune.jsp" method="post">
+	이름<input type="text" name="name"><br>
+	아이디<input type="text" name="aa"><br>
+	비밀번호<input type="password" name="pass" value="1234"><br>
+	주소<input type="text" name="addr" value="대전"><br>
+	전화번호<input type="text" name="tel" value="1234"><br>
+	성별<input type="radio" name="gender" value="m">남자
+	<input type="radio" name="gender" value="f">여자<br>
+	좋아하는 음식
+	<input type="checkbox" name="food" value="간장새우">간장새우
+	<input type="checkbox" name="food" value="떡볶이">떡볶이
+	<input type="checkbox" name="food" value="불닭볶음면">불닭볶음면
+	<input type="checkbox" name="food" value="초밥">초밥
+	<input type="checkbox" name="food" value="닭도리탕">닭도리탕
+	<br>
+	파일<input type="file" name="file"><br>
+	<input type="hidden" name="id2" value="a001">
+	<br><br>
+	<img name="img" src="../images/윤아.png"><br><br>
+	전송하기<br>
+	<input id="inputimg" type="image" src="../images/윤아.png">
+	<input type="reset" value="취소">
+	<input type="submit" value="전송">
+	<input type="button" value="확인" onclick="aa()">
+	
+	
+	</form>
+
+</body>
+</html>
